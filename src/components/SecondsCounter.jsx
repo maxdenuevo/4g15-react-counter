@@ -42,7 +42,6 @@ const SecondsCounter = ({ initialSeconds = 0, countDown = false }) => {
 
   return (
     <div className="d-flex flex-column align-items-center bg-black p-4 rounded-4 shadow-lg">
-      {/* Counter Display */}
       <div className="bg-black border border-2 border-white p-4 rounded-4 mb-4 d-flex align-items-center gap-3">
         <Clock className="text-white" size={40} strokeWidth={1.5} />
         {digitArray.map((digit, index) => (
@@ -61,7 +60,6 @@ const SecondsCounter = ({ initialSeconds = 0, countDown = false }) => {
         ))}
       </div>
       
-      {/* Controls */}
       <div className="d-flex gap-3">
         <button
           onClick={() => setIsRunning(!isRunning)}
